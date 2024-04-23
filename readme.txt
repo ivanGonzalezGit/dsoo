@@ -5,3 +5,5 @@ git commit -m "Mensaje explicación" (cada vez que subimos un archivo hay q deja
 git remote add origin https://github.com/ivanGonzalezGit/dsoo.git
 
 git push -u origin main
+
+(para cambiar la rama de la carpeta .git en mi máquina -> git checkout -b "nombre_de_la_rama")
