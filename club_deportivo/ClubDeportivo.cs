@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using socios;
-using actividades;
-using System.ComponentModel.DataAnnotations.Schema;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace ClubDeportivo
+namespace Club_deportivo_EV
 {
     internal class ClubDeportivo
     {
@@ -33,7 +29,7 @@ namespace ClubDeportivo
         }
 
         //registra las actividades
-        public static void AltaActividad(string nomActividad)
+        public static void AltaActividad(string nCod, string nomActividad)
         {
             if (ClubDeportivo.BuscarActividad(nomActividad))
             {
@@ -41,7 +37,7 @@ namespace ClubDeportivo
             }
             else
             {
-                Actividades actividad1 = new Actividades(nomActividad);
+                Actividades actividad1 = new Actividades(nCod, nomActividad);
                 listaActividades.Add(actividad1);
                 Console.WriteLine("ACTIVIDAD CARGADA CORRECTAMENTE");
             }
@@ -50,10 +46,10 @@ namespace ClubDeportivo
         public static void InscribirActividad(int id_socio, string nomAct)
         {
 
-            int indice =0;
-            for (int i=0; i<listaSocios.Count; i++)
+            int indice = 0;
+            for (int i = 0; i < listaSocios.Count; i++)
             {
-                if(id_socio == listaSocios[i].nro_identificacion)
+                if (id_socio == listaSocios[i].dni)
                 {
                     indice = i;
                 }
@@ -63,7 +59,7 @@ namespace ClubDeportivo
 
             if (BuscarSocio(id_socio))
             {
-                if(BuscarActividad(nomAct))
+                if (BuscarActividad(nomAct))
                 {
                     if (socio1.TopeActividades())
                     {
@@ -113,7 +109,7 @@ namespace ClubDeportivo
             for (int i = 0; i < listaSocios.Count; i++)
             {
                 Socios objetoSocio = listaSocios[i];
-                if (nro_identificacion == objetoSocio.NroSocio)
+                if (nro_identificacion == objetoSocio.Dni)
                 {
                     existe = true;
                     break;

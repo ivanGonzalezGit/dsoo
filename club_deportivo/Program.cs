@@ -1,18 +1,19 @@
-ï»¿using System;
-using socios;
-using ClubDeportivo;
-using actividades;
-using System.ComponentModel;
-using System.Collections.Generic;
-
-
-
-namespace ClubDeportivo
+namespace Club_deportivo_EV
 {
-    internal class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new frmLogin());
+
+            Console.WriteLine("estás usando la consola");
 
         }
     }

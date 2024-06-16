@@ -4,27 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace actividades
+namespace Club_deportivo_EV
 {
     internal class Actividades
     {
         // atributos
+        public string codigo;
         public string nombre;
-        private int cupo = 5;
+        private int cupo = 20;
 
         // constructor
-        public Actividades(string nom)
+        public Actividades(string cod, string nom)
         {
+            this.codigo = cod;
             this.nombre = nom;
         }
 
         // getters y setters
+        public string Codigo { get { return codigo; } set { nombre = value; } }
+
         public string Nombre { get { return nombre; } set { nombre = value; } }
 
         //métodos
         public override string ToString()
         {
-            return "Nombre Actividad: " + Nombre;
+            return "Código: " + Codigo + "Nombre Actividad: " + Nombre;
         }
 
         public void DisminuirCupo()
