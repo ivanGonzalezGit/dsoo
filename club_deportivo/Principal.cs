@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Club_deportivo_EV.Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,16 @@ namespace Club_deportivo_EV
 {
     public partial class frmPrincipal : Form
     {
+
         public frmPrincipal()
         {
             InitializeComponent();
         }
 
+        internal string? nomAdministrador;
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            lblNombreAdmin.Text = nomAdministrador.ToUpper();
         }
 
         private void btnAltaSocio_Click(object sender, EventArgs e)
@@ -45,6 +48,29 @@ namespace Club_deportivo_EV
         {
             Form listaActividades = new frmListadoActividades();
             listaActividades.Show();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPagarInscripcion_Click(object sender, EventArgs e)
+        {
+            frmPagarInscripcion pagarInscripcion = new frmPagarInscripcion();
+            pagarInscripcion.Show();
+
+        }
+
+        private void btnPagarCuota_Click(object sender, EventArgs e)
+        {
+            frmPagarCuota pagarCuota = new frmPagarCuota();
+            pagarCuota.Show();
         }
     }
 }

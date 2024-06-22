@@ -12,9 +12,6 @@ namespace Club_deportivo_EV
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new frmLogin());
-
-            Console.WriteLine("estás usando la consola");
-
         }
     }
 }

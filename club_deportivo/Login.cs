@@ -29,7 +29,8 @@ namespace Club_deportivo_EV
 
             if (tablaLogin.Rows.Count >0)
             {
-                Form principal = new frmPrincipal();
+                frmPrincipal principal = new frmPrincipal();
+                principal.nomAdministrador = Convert.ToString(tablaLogin.Rows[0][1]);
                 principal.Show();
                 this.Hide();
             }

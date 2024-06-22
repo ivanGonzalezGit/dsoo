@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
+            dtgvListadoMorosos = new DataGridView();
             dni = new DataGridViewTextBoxColumn();
             nombre = new DataGridViewTextBoxColumn();
             apellido = new DataGridViewTextBoxColumn();
             btnCerrar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvListadoMorosos).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvListadoMorosos
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dni, nombre, apellido });
-            dataGridView1.Location = new Point(47, 27);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(343, 314);
-            dataGridView1.TabIndex = 1;
+            dtgvListadoMorosos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvListadoMorosos.Columns.AddRange(new DataGridViewColumn[] { dni, nombre, apellido });
+            dtgvListadoMorosos.Location = new Point(47, 27);
+            dtgvListadoMorosos.Name = "dtgvListadoMorosos";
+            dtgvListadoMorosos.Size = new Size(343, 314);
+            dtgvListadoMorosos.TabIndex = 1;
+            dtgvListadoMorosos.CellContentClick += dtgvListadoMorosos_CellContentClick;
             // 
             // dni
             // 
@@ -79,15 +80,16 @@
             BackColor = Color.Teal;
             ClientSize = new Size(434, 461);
             Controls.Add(btnCerrar);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtgvListadoMorosos);
             Name = "frmListadoMorosos";
-            Text = "Club Deportivo";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Text = "Listado Morosos";
+            Load += frmListadoMorosos_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgvListadoMorosos).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-        private DataGridView dataGridView1;
+        private DataGridView dtgvListadoMorosos;
         private DataGridViewTextBoxColumn dni;
         private DataGridViewTextBoxColumn nombre;
         private DataGridViewTextBoxColumn apellido;

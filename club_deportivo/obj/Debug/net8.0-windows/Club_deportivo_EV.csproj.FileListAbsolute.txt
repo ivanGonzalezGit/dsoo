@@ -35,3 +35,5 @@ C:\Users\Familia\source\repos\Club_deportivo_EV\bin\Debug\net8.0-windows\runtime
 C:\Users\Familia\source\repos\Club_deportivo_EV\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\Familia\source\repos\Club_deportivo_EV\obj\Debug\net8.0-windows\Club_deportivo_EV.csproj.AssemblyReference.cache
 C:\Users\Familia\source\repos\Club_deportivo_EV\obj\Debug\net8.0-windows\Club_dep.4DD0F093.Up2Date
+C:\Users\Familia\source\repos\Club_deportivo_EV\obj\Debug\net8.0-windows\Club_deportivo_EV.frmPagarInscripcion.resources
+C:\Users\Familia\source\repos\Club_deportivo_EV\obj\Debug\net8.0-windows\Club_deportivo_EV.frmPagarCuota.resources

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             btnCerrar = new Button();
-            dataGridView1 = new DataGridView();
+            dtgvListadoSocios = new DataGridView();
             dni = new DataGridViewTextBoxColumn();
             nombre = new DataGridViewTextBoxColumn();
             apellido = new DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgvListadoSocios).BeginInit();
             SuspendLayout();
             // 
             // btnCerrar
@@ -48,14 +48,14 @@
             btnCerrar.UseVisualStyleBackColor = false;
             btnCerrar.Click += btnCerrar_Click;
             // 
-            // dataGridView1
+            // dtgvListadoSocios
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { dni, nombre, apellido });
-            dataGridView1.Location = new Point(44, 27);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(343, 314);
-            dataGridView1.TabIndex = 2;
+            dtgvListadoSocios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgvListadoSocios.Columns.AddRange(new DataGridViewColumn[] { dni, nombre, apellido });
+            dtgvListadoSocios.Location = new Point(44, 27);
+            dtgvListadoSocios.Name = "dtgvListadoSocios";
+            dtgvListadoSocios.Size = new Size(343, 314);
+            dtgvListadoSocios.TabIndex = 2;
             // 
             // dni
             // 
@@ -78,18 +78,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(434, 461);
-            Controls.Add(dataGridView1);
+            Controls.Add(dtgvListadoSocios);
             Controls.Add(btnCerrar);
             Name = "frmListadoSocios";
             Text = "Listado de Socios";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += frmListadoSocios_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgvListadoSocios).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btnCerrar;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvListadoSocios;
         private DataGridViewTextBoxColumn dni;
         private DataGridViewTextBoxColumn nombre;
         private DataGridViewTextBoxColumn apellido;

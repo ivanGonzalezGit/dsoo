@@ -36,6 +36,8 @@
             txtPass = new TextBox();
             btnLimpiar = new Button();
             picLogin = new PictureBox();
+            lblEjemploUs = new Label();
+            lblEjemploPass = new Label();
             ((System.ComponentModel.ISupportInitialize)picLogin).BeginInit();
             SuspendLayout();
             // 
@@ -109,12 +111,34 @@
             picLogin.TabIndex = 7;
             picLogin.TabStop = false;
             // 
+            // lblEjemploUs
+            // 
+            lblEjemploUs.AutoSize = true;
+            lblEjemploUs.ForeColor = SystemColors.ButtonHighlight;
+            lblEjemploUs.Location = new Point(357, 221);
+            lblEjemploUs.Name = "lblEjemploUs";
+            lblEjemploUs.Size = new Size(49, 15);
+            lblEjemploUs.TabIndex = 8;
+            lblEjemploUs.Text = "(admin)";
+            // 
+            // lblEjemploPass
+            // 
+            lblEjemploPass.AutoSize = true;
+            lblEjemploPass.ForeColor = SystemColors.ButtonHighlight;
+            lblEjemploPass.Location = new Point(357, 269);
+            lblEjemploPass.Name = "lblEjemploPass";
+            lblEjemploPass.Size = new Size(49, 15);
+            lblEjemploPass.TabIndex = 9;
+            lblEjemploPass.Text = "(admin)";
+            // 
             // frmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(434, 461);
+            Controls.Add(lblEjemploPass);
+            Controls.Add(lblEjemploUs);
             Controls.Add(picLogin);
             Controls.Add(btnLimpiar);
             Controls.Add(txtPass);
@@ -139,5 +163,7 @@
         private TextBox txtPass;
         private Button btnLimpiar;
         private PictureBox picLogin;
+        private Label lblEjemploUs;
+        private Label lblEjemploPass;
     }
 }

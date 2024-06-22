@@ -4,16 +4,22 @@
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PagarCuota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PagarInscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="AltaSocio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form4.cs">
+    <Compile Update="ListadoMorosos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Form5.cs">
+    <Compile Update="ListadoSocios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Form6.cs">

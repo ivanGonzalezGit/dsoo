@@ -36,6 +36,9 @@
             txtApellido = new TextBox();
             btnAltaSocio = new Button();
             btnLimpiar = new Button();
+            lblAsterisco1 = new Label();
+            lblAsterisco2 = new Label();
+            lblAsterisco3 = new Label();
             SuspendLayout();
             // 
             // lblDni
@@ -114,12 +117,48 @@
             btnLimpiar.UseVisualStyleBackColor = false;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // lblAsterisco1
+            // 
+            lblAsterisco1.AutoSize = true;
+            lblAsterisco1.Font = new Font("Segoe UI", 14F);
+            lblAsterisco1.ForeColor = Color.Orange;
+            lblAsterisco1.Location = new Point(363, 46);
+            lblAsterisco1.Name = "lblAsterisco1";
+            lblAsterisco1.Size = new Size(20, 25);
+            lblAsterisco1.TabIndex = 8;
+            lblAsterisco1.Text = "*";
+            // 
+            // lblAsterisco2
+            // 
+            lblAsterisco2.AutoSize = true;
+            lblAsterisco2.Font = new Font("Segoe UI", 14F);
+            lblAsterisco2.ForeColor = Color.Orange;
+            lblAsterisco2.Location = new Point(363, 99);
+            lblAsterisco2.Name = "lblAsterisco2";
+            lblAsterisco2.Size = new Size(20, 25);
+            lblAsterisco2.TabIndex = 9;
+            lblAsterisco2.Text = "*";
+            // 
+            // lblAsterisco3
+            // 
+            lblAsterisco3.AutoSize = true;
+            lblAsterisco3.Font = new Font("Segoe UI", 14F);
+            lblAsterisco3.ForeColor = Color.Orange;
+            lblAsterisco3.Location = new Point(363, 154);
+            lblAsterisco3.Name = "lblAsterisco3";
+            lblAsterisco3.Size = new Size(20, 25);
+            lblAsterisco3.TabIndex = 10;
+            lblAsterisco3.Text = "*";
+            // 
             // frmAltaSocio
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(434, 296);
+            Controls.Add(lblAsterisco3);
+            Controls.Add(lblAsterisco2);
+            Controls.Add(lblAsterisco1);
             Controls.Add(btnLimpiar);
             Controls.Add(btnAltaSocio);
             Controls.Add(txtApellido);
@@ -144,5 +183,8 @@
         private TextBox txtApellido;
         private Button btnAltaSocio;
         private Button btnLimpiar;
+        private Label lblAsterisco1;
+        private Label lblAsterisco2;
+        private Label lblAsterisco3;
     }
 }

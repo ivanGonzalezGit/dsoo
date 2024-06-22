@@ -36,6 +36,9 @@
             btnListarMorosos = new Button();
             btnListarSocios = new Button();
             pictureBox1 = new PictureBox();
+            btnSalir = new Button();
+            lblAdministrador = new Label();
+            lblNombreAdmin = new Label();
             ((System.ComponentModel.ISupportInitialize)picDeporte).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -43,7 +46,7 @@
             // picDeporte
             // 
             picDeporte.Image = (Image)resources.GetObject("picDeporte.Image");
-            picDeporte.Location = new Point(12, 35);
+            picDeporte.Location = new Point(12, 70);
             picDeporte.Name = "picDeporte";
             picDeporte.Size = new Size(400, 114);
             picDeporte.TabIndex = 0;
@@ -71,6 +74,7 @@
             btnPagarInscripcion.TabIndex = 2;
             btnPagarInscripcion.Text = "Pagar Inscripción";
             btnPagarInscripcion.UseVisualStyleBackColor = false;
+            btnPagarInscripcion.Click += btnPagarInscripcion_Click;
             // 
             // btnPagarCuota
             // 
@@ -82,6 +86,7 @@
             btnPagarCuota.TabIndex = 3;
             btnPagarCuota.Text = "Pagar Cuota";
             btnPagarCuota.UseVisualStyleBackColor = false;
+            btnPagarCuota.Click += btnPagarCuota_Click;
             // 
             // btnListarMorosos
             // 
@@ -116,12 +121,48 @@
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = Color.Crimson;
+            btnSalir.ForeColor = SystemColors.ButtonHighlight;
+            btnSalir.Location = new Point(337, 404);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(75, 23);
+            btnSalir.TabIndex = 7;
+            btnSalir.Text = "Salir";
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // lblAdministrador
+            // 
+            lblAdministrador.AutoSize = true;
+            lblAdministrador.ForeColor = SystemColors.ButtonHighlight;
+            lblAdministrador.Location = new Point(12, 20);
+            lblAdministrador.Name = "lblAdministrador";
+            lblAdministrador.Size = new Size(116, 15);
+            lblAdministrador.TabIndex = 8;
+            lblAdministrador.Text = "ADMINISTRADOR/A:";
+            lblAdministrador.Click += label1_Click;
+            // 
+            // lblNombreAdmin
+            // 
+            lblNombreAdmin.AutoSize = true;
+            lblNombreAdmin.ForeColor = SystemColors.ButtonHighlight;
+            lblNombreAdmin.Location = new Point(134, 20);
+            lblNombreAdmin.Name = "lblNombreAdmin";
+            lblNombreAdmin.Size = new Size(35, 15);
+            lblNombreAdmin.TabIndex = 11;
+            lblNombreAdmin.Text = "value";
+            // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Teal;
             ClientSize = new Size(434, 461);
+            Controls.Add(lblNombreAdmin);
+            Controls.Add(lblAdministrador);
+            Controls.Add(btnSalir);
             Controls.Add(btnListarSocios);
             Controls.Add(btnListarMorosos);
             Controls.Add(btnPagarCuota);
@@ -130,11 +171,13 @@
             Controls.Add(picDeporte);
             Controls.Add(pictureBox1);
             Name = "frmPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Club Deportivo";
             Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)picDeporte).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -146,5 +189,8 @@
         private Button btnListarMorosos;
         private Button btnListarSocios;
         private PictureBox pictureBox1;
+        private Button btnSalir;
+        private Label lblAdministrador;
+        private Label lblNombreAdmin;
     }
 }
