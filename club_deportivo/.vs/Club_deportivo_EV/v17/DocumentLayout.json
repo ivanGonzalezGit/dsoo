@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Familia\\source\\repos\\Club_deportivo_EV\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81E1FC3C-6210-442F-B69C-872AF43151B5}|Club_deportivo_EV.csproj|c:\\users\\familia\\source\\repos\\club_deportivo_ev\\imprimir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81E1FC3C-6210-442F-B69C-872AF43151B5}|Club_deportivo_EV.csproj|solutionrelative:imprimir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Imprimir.cs",
+              "DocumentMoniker": "C:\\Users\\Familia\\source\\repos\\Club_deportivo_EV\\Imprimir.cs",
+              "RelativeDocumentMoniker": "Imprimir.cs",
+              "ToolTip": "C:\\Users\\Familia\\source\\repos\\Club_deportivo_EV\\Imprimir.cs",
+              "RelativeToolTip": "Imprimir.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAEwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T21:17:45.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

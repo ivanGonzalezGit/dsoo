@@ -23,7 +23,7 @@ namespace Club_deportivo_EV
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             DataTable tablaLogin = new DataTable();
-            Datos.Administradores dato =new Datos.Administradores();
+            Datos.Administradores dato = new Datos.Administradores();
 
             tablaLogin = dato.Log_Usu(txtUsuario.Text, txtPass.Text);
 

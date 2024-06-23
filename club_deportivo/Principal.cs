@@ -44,12 +44,6 @@ namespace Club_deportivo_EV
             listaSocios.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form listaActividades = new frmListadoActividades();
-            listaActividades.Show();
-        }
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
